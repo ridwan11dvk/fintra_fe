@@ -1,0 +1,10 @@
+export const LOOKUP_VALUE_LIST_PAGE_TITLE = "Lookup Value";
+export const LOOKUP_VALUE_BASE = "lookup-value";
+export const LOOKUP_VALUE_URL = "/master-data/" + LOOKUP_VALUE_BASE;
+
+export const LOOKUP_VALUE_PERMISSION = "master-data:lookup-value:";
+export const LOOKUP_VALUE_LIST_PERMISSION = LOOKUP_VALUE_PERMISSION + "list";
+export const LOOKUP_VALUE_READ_PERMISSION = LOOKUP_VALUE_PERMISSION + "read";
+export const LOOKUP_VALUE_CREATE_PERMISSION = LOOKUP_VALUE_PERMISSION + "create";
+export const LOOKUP_VALUE_UPDATE_PERMISSION = LOOKUP_VALUE_PERMISSION + "update";
+export const LOOKUP_VALUE_DELETE_PERMISSION = LOOKUP_VALUE_PERMISSION + "delete";

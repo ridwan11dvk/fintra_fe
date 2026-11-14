@@ -1,0 +1,25 @@
+{
+  "url": "http://localhost:5173/master-data/department",
+  "capture_source": "OpenClaw connected Chrome extension profile, signed-in user session",
+  "capture_helper": "Browser screenshots captured from the authenticated extension tab; the standalone Playwright helper does not inherit this session.",
+  "viewport": { "width": 1440, "height": 960 },
+  "device_pixel_ratio": 1,
+  "browser": "Chromium 153.0.8010.36",
+  "browser_zoom": "100%",
+  "color_scheme": "light",
+  "reduced_motion_preference": "no-preference",
+  "motion_capture_note": "Screenshots taken from settled UI states after route and font readiness; no interaction animation was active at capture time.",
+  "font": { "family": "Inter Variable", "document_fonts_status": "loaded" },
+  "fixture": "Development in-memory Department fixture; 16 records; QA-created record removed by module reload before final capture.",
+  "reference_viewport": { "width": 1440, "height": 960 },
+  "viewport_match": true,
+  "search_empty_reference_height": 1185,
+  "search_empty_actual_height": 960,
+  "screenshot_states": [
+    "list-1440x960.png",
+    "search-empty-1440x960.png",
+    "add-1440x960.png",
+    "edit-1440x960.png",
+    "detail-1440x960.png"
+  ]
+}

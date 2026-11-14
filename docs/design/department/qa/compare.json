@@ -1,0 +1,259 @@
+{
+  "thresholds": {
+    "channel_tolerance": 3,
+    "max_mismatch_ratio": 0.01
+  },
+  "capture_viewport": {
+    "width": 1440,
+    "height": 960,
+    "dpr": 1
+  },
+  "content_crop_contract": "Main Department content only, x=328..1408/y=64..960; excludes the shared navigation shell; search-empty reference is cropped to visible 960px frame for same-size comparison. Full-frame failures are retained and not masked.",
+  "full_frame_comparisons": [
+    {
+      "state": "list",
+      "result": {
+        "passed": false,
+        "dimensions": {
+          "width": 1440,
+          "height": 960
+        },
+        "tolerance": 3,
+        "max_mismatch_ratio": 0.01,
+        "compared_pixels": 1382400,
+        "mismatched_pixels": 143846,
+        "mismatch_ratio": 0.1040552662037037,
+        "mean_absolute_error": 11.135072096836419,
+        "max_channel_error": 255
+      }
+    },
+    {
+      "state": "add",
+      "result": {
+        "passed": false,
+        "dimensions": {
+          "width": 1440,
+          "height": 960
+        },
+        "tolerance": 3,
+        "max_mismatch_ratio": 0.01,
+        "compared_pixels": 1382400,
+        "mismatched_pixels": 86837,
+        "mismatch_ratio": 0.06281611689814814,
+        "mean_absolute_error": 7.691538869598766,
+        "max_channel_error": 252
+      }
+    },
+    {
+      "state": "edit",
+      "result": {
+        "passed": false,
+        "dimensions": {
+          "width": 1440,
+          "height": 960
+        },
+        "tolerance": 3,
+        "max_mismatch_ratio": 0.01,
+        "compared_pixels": 1382400,
+        "mismatched_pixels": 84527,
+        "mismatch_ratio": 0.0611451099537037,
+        "mean_absolute_error": 7.537249951774691,
+        "max_channel_error": 252
+      }
+    },
+    {
+      "state": "detail",
+      "result": {
+        "passed": false,
+        "dimensions": {
+          "width": 1440,
+          "height": 960
+        },
+        "tolerance": 3,
+        "max_mismatch_ratio": 0.01,
+        "compared_pixels": 1382400,
+        "mismatched_pixels": 76418,
+        "mismatch_ratio": 0.055279224537037035,
+        "mean_absolute_error": 7.407604648919753,
+        "max_channel_error": 241
+      }
+    },
+    {
+      "state": "search-empty",
+      "result": {
+        "passed": false,
+        "error": "dimensions differ",
+        "ideal_dimensions": {
+          "width": 1440,
+          "height": 1185
+        },
+        "actual_dimensions": {
+          "width": 1440,
+          "height": 960
+        }
+      }
+    }
+  ],
+  "department_content_comparisons": [
+    {
+      "state": "list",
+      "crop": "x=328,y=64,w=1080,h=896",
+      "result_tolerance_3": {
+        "passed": false,
+        "dimensions": {
+          "width": 1080,
+          "height": 896
+        },
+        "tolerance": 3,
+        "max_mismatch_ratio": 0.01,
+        "compared_pixels": 967680,
+        "mismatched_pixels": 77173,
+        "mismatch_ratio": 0.07975053736772486,
+        "mean_absolute_error": 7.208885857583774,
+        "max_channel_error": 255
+      },
+      "diagnostic_tolerance_8": {
+        "passed": false,
+        "dimensions": {
+          "width": 1080,
+          "height": 896
+        },
+        "tolerance": 8,
+        "max_mismatch_ratio": 0.01,
+        "compared_pixels": 967680,
+        "mismatched_pixels": 68819,
+        "mismatch_ratio": 0.07111751818783069,
+        "mean_absolute_error": 7.208885857583774,
+        "max_channel_error": 255
+      }
+    },
+    {
+      "state": "add",
+      "crop": "x=328,y=64,w=1080,h=896",
+      "result_tolerance_3": {
+        "passed": false,
+        "dimensions": {
+          "width": 1080,
+          "height": 896
+        },
+        "tolerance": 3,
+        "max_mismatch_ratio": 0.01,
+        "compared_pixels": 967680,
+        "mismatched_pixels": 26391,
+        "mismatch_ratio": 0.027272445436507937,
+        "mean_absolute_error": 2.9073636601631394,
+        "max_channel_error": 252
+      },
+      "diagnostic_tolerance_8": {
+        "passed": false,
+        "dimensions": {
+          "width": 1080,
+          "height": 896
+        },
+        "tolerance": 8,
+        "max_mismatch_ratio": 0.01,
+        "compared_pixels": 967680,
+        "mismatched_pixels": 19775,
+        "mismatch_ratio": 0.02043547453703704,
+        "mean_absolute_error": 2.9073636601631394,
+        "max_channel_error": 252
+      }
+    },
+    {
+      "state": "edit",
+      "crop": "x=328,y=64,w=1080,h=896",
+      "result_tolerance_3": {
+        "passed": false,
+        "dimensions": {
+          "width": 1080,
+          "height": 896
+        },
+        "tolerance": 3,
+        "max_mismatch_ratio": 0.01,
+        "compared_pixels": 967680,
+        "mismatched_pixels": 24095,
+        "mismatch_ratio": 0.02489976025132275,
+        "mean_absolute_error": 2.6660497271825396,
+        "max_channel_error": 252
+      },
+      "diagnostic_tolerance_8": {
+        "passed": false,
+        "dimensions": {
+          "width": 1080,
+          "height": 896
+        },
+        "tolerance": 8,
+        "max_mismatch_ratio": 0.01,
+        "compared_pixels": 967680,
+        "mismatched_pixels": 15610,
+        "mismatch_ratio": 0.01613136574074074,
+        "mean_absolute_error": 2.6660497271825396,
+        "max_channel_error": 252
+      }
+    },
+    {
+      "state": "detail",
+      "crop": "x=328,y=64,w=1080,h=896",
+      "result_tolerance_3": {
+        "passed": false,
+        "dimensions": {
+          "width": 1080,
+          "height": 896
+        },
+        "tolerance": 3,
+        "max_mismatch_ratio": 0.01,
+        "compared_pixels": 967680,
+        "mismatched_pixels": 15713,
+        "mismatch_ratio": 0.016237805886243385,
+        "mean_absolute_error": 2.53250248015873,
+        "max_channel_error": 234
+      },
+      "diagnostic_tolerance_8": {
+        "passed": false,
+        "dimensions": {
+          "width": 1080,
+          "height": 896
+        },
+        "tolerance": 8,
+        "max_mismatch_ratio": 0.01,
+        "compared_pixels": 967680,
+        "mismatched_pixels": 12345,
+        "mismatch_ratio": 0.012757316468253968,
+        "mean_absolute_error": 2.53250248015873,
+        "max_channel_error": 234
+      }
+    },
+    {
+      "state": "search-empty",
+      "crop": "x=328,y=64,w=1080,h=896",
+      "result_tolerance_3": {
+        "passed": false,
+        "dimensions": {
+          "width": 1080,
+          "height": 896
+        },
+        "tolerance": 3,
+        "max_mismatch_ratio": 0.01,
+        "compared_pixels": 967680,
+        "mismatched_pixels": 50900,
+        "mismatch_ratio": 0.05260003306878307,
+        "mean_absolute_error": 4.167643918099647,
+        "max_channel_error": 255
+      },
+      "diagnostic_tolerance_8": {
+        "passed": false,
+        "dimensions": {
+          "width": 1080,
+          "height": 896
+        },
+        "tolerance": 8,
+        "max_mismatch_ratio": 0.01,
+        "compared_pixels": 967680,
+        "mismatched_pixels": 41517,
+        "mismatch_ratio": 0.04290364583333333,
+        "mean_absolute_error": 4.167643918099647,
+        "max_channel_error": 255
+      }
+    }
+  ]
+}

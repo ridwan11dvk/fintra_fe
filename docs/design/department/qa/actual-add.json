@@ -1,0 +1,23 @@
+{
+  "url": "http://localhost:5173/master-data/department/create",
+  "viewport": { "width": 1440, "height": 960 },
+  "device_pixel_ratio": 1,
+  "color_scheme": "light",
+  "font_family": "Inter Variable",
+  "document_fonts_status": "loaded",
+  "section_bounds": { "x": 328, "y": 124, "width": 1080, "height": 376 },
+  "elements": [
+    { "selector": "h1", "text": "Add Department", "bounds": { "x": 328, "y": 80, "width": 185, "height": 32 }, "font_size": "24px", "font_weight": "600" },
+    { "selector": "#department-name", "placeholder": "Enter Department Name", "bounds": { "x": 640, "y": 157, "width": 512, "height": 44 }, "font_size": "16px" },
+    { "selector": "#department-parent", "bounds": { "x": 640, "y": 221, "width": 512, "height": 44 }, "font_size": "16px" },
+    { "selector": "#department-status", "role": "switch", "accessible_name": "Department status", "checked": true, "bounds": { "x": 640, "y": 285, "width": 40, "height": 20 } },
+    { "selector": "#department-code", "placeholder": "Enter Department Code", "bounds": { "x": 640, "y": 325, "width": 512, "height": 154 }, "font_size": "16px" },
+    { "selector": "button[type=submit]", "text": "Save", "disabled_when_required_fields_empty": true }
+  ],
+  "accessible_labels": ["Department Name *", "Parent Department", "Department status", "Department Code *"],
+  "validation_alerts": [],
+  "design_differences_retained_for_prd": [
+    "Department Name is a text field, not the Figma dropdown.",
+    "Status defaults to Active and required markers are shown per the FE/PRD contract; the Figma sample renders the switch off without required markers."
+  ]
+}

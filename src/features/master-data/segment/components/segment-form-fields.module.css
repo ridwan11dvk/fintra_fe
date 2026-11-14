@@ -1,0 +1,56 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem 0;
+}
+
+.row:last-child {
+  border-bottom: 0;
+}
+
+.multilineRow {
+  align-items: start;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.topLabel {
+  padding-top: 0.5rem;
+}
+
+.controlCell {
+  min-width: 0;
+}
+
+.inputControl,
+.selectControl,
+.textareaControl {
+  width: min(100%, 30rem);
+}
+
+.textareaControl {
+  min-height: 9.625rem;
+  resize: vertical;
+}
+
+@media (min-width: 768px) {
+  .row {
+    grid-template-columns: 145px minmax(0, 1fr);
+    column-gap: 0.75rem;
+  }
+
+  .multilineRow {
+    align-items: start;
+  }
+}

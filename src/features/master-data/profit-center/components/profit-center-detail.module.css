@@ -1,0 +1,33 @@
+.details {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.375rem;
+  padding: 0.875rem 0;
+}
+
+.label {
+  color: #4b505c;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.value {
+  color: #484d58;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .row {
+    grid-template-columns: minmax(0, 45%) minmax(0, 55%);
+    align-items: center;
+    gap: 0;
+    padding: 1rem 0;
+  }
+
+}

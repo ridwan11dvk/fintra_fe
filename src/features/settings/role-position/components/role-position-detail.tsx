@@ -1,0 +1,53 @@
+import { type RolePositionDetailResponse } from "@/features/settings/role-position";
+import { Accordion, AccordionCard } from "@railfinance/core/ui/accordion";
+import { Badge } from "@railfinance/core/ui/badge";
+import { Label } from "@railfinance/core/ui/label";
+
+interface RolePositionDetailProps {
+  data: RolePositionDetailResponse;
+}
+
+export function RolePositionDetail({
+  data,
+}: Readonly<RolePositionDetailProps>) {
+  const { jobPosition, roles } = data;
+
+  return (
+    <div className="space-y-6">
+      <Accordion type="multiple" defaultValue={["role-position-info"]}>
+        <AccordionCard
+          trigger="Role Position Information"
+          value="role-position-info"
+        >
+          <div className="space-y-4">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+              <div className="space-y-2">
+                <Label>Position</Label>
+                <div className="font-medium">
+                  {jobPosition.code} - {jobPosition.name}
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <Label>Role</Label>
+                <div className="flex flex-wrap gap-2">
+                  {roles.length > 0 ? (
+                    roles.map((role) => (
+                      <Badge key={role.id} variant="outline">
+                        {role.name}
+                      </Badge>
+                    ))
+                  ) : (
+                    <span className="text-muted-foreground">
+                      No roles assigned
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </AccordionCard>
+      </Accordion>
+    </div>
+  );
+}

@@ -1,0 +1,10 @@
+export const DOCUMENT_NAME_LIST_PAGE_TITLE = "Document Name";
+export const DOCUMENT_NAME_BASE = "document-name";
+export const DOCUMENT_NAME_URL = "/master-data/" + DOCUMENT_NAME_BASE;
+
+export const DOCUMENT_NAME_PERMISSION = "master-data:document-name:";
+export const DOCUMENT_NAME_LIST_PERMISSION = DOCUMENT_NAME_PERMISSION + "list";
+export const DOCUMENT_NAME_READ_PERMISSION = DOCUMENT_NAME_PERMISSION + "read";
+export const DOCUMENT_NAME_CREATE_PERMISSION = DOCUMENT_NAME_PERMISSION + "create";
+export const DOCUMENT_NAME_UPDATE_PERMISSION = DOCUMENT_NAME_PERMISSION + "update";
+export const DOCUMENT_NAME_DELETE_PERMISSION = DOCUMENT_NAME_PERMISSION + "delete";
